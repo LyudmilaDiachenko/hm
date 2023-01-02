@@ -12,7 +12,7 @@
         <header>
             <nav>
                 <div class="nav-container">
-                    <ul class="nav-list nav-list-left">
+                    <ul class="list nav-list-left">
                         <li class="nav-unit nav-unit-left">
                             <a href="#" class="link-decor link-color nav-link">
                                 Обслуговування клієнтів
@@ -36,14 +36,14 @@
                             </a>
                         </li>
                     </ul>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#" class="link-decor link-color nav-link">
+                    <ul class="list">
+                        <li class="logotype">
+                            <a href="#" class="">
                                 <img src="./img/nav/logo.jpeg" width="64" height="46" />
                             </a>
                         </li>
                     </ul>
-                    <ul class="nav-list nav-list-specification nav-list-right">
+                    <ul class="list nav-list-specification nav-list-right">
                         <li class="nav-unit-right">
                             <a href="#" class="link-decor link-color nav-link nav-link-specification">
                                 <svg class="nav-image" viewBox="0 0 24 24" focusable="false">
@@ -67,74 +67,364 @@
                     </ul>
                 </div>
             </nav>
-        </header>
-        <main>
             <menu>
                 <div class="nav-menu">
-                    <ul class="nav-menu-list">
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Вона
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Він
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Розділений
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Дитина
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Малюк
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                H&M ДІМ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Краса                            
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Спорт
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Розпродаж
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="link-decor link-color">
-                                Наша відповідальність
-                            </a>
-                        </li>
-                        <li>
-                            <div>
-                                <input type="text" class="nav-menu-search" placeholder="Пошук продуктів">
-                                <button>
-                                    <svg class="seach-picture" viewBox="0 0 24 24" focusable="false">
-                                        <path d="M11 2a9 9 0 0 1 6.866 14.82l-.159.18 4.243 4.243-.707.707L17 17.708A9 9 0 1 1 11 2zm0 1a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path>
-                                    </svg>
-                                </button>    
-                            </div> 
-                        </li>
-                    </ul>
+                    <div class="search">
+                        <div class="search-wrap">
+                            <div class="search-container">
+                                <input type="text" class="search-item" placeholder="Пошук продуктів" autofocus />
+                            </div>
+                            <div class="search-knob">
+                                <svg class="search-picture" viewBox="0 0 24 24" focusable="false">
+                                    <path d="M11 2a9 9 0 0 1 6.866 14.82l-.159.18 4.243 4.243-.707.707L17 17.708A9 9 0 1 1 11 2zm0 1a8 8 0 1 0 0 16 8 8 0 0 0 0-16z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="nav-menu-container">
+                        <ul class="list nav-menu-list">
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Вона
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Він
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Розділений
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Дитина
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Малюк
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    H&M ДІМ
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Краса                            
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Спорт
+                                </a>
+                            </li>
+                            <li class="nav-menu-item">
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Розпродаж
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-decor link-color link-outward link-underline">
+                                    Наша відповідальність
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+
+                    <div class="popup-container">                                    
+                        <ul class="list popup-list">
+                            <h3 class="popup-title">
+                                Новини
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Бачити все
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Одяг
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Взуття та аксесуари
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Краса
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Нижня білизна та піжами
+                                    </a>
+                                </li>
+                            <h3 class="popup-title">
+                                Наймодніший зараз
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Зимові хіти
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Видання H&M
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Стиль для вечірки
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Мінімалізм у новій версії
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Новий сезон
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Новорічні стилізації
+                                    </a>
+                                </li>
+                            <h3 class="popup-title">
+                                Пропозиції
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Бестселери від 19,99 у.о.
+                                    </a>
+                                </li>
+                            <h3 class="popup-title">
+                                Подарунки                                    
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Подарункові карти
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Посібник з подарунків
+                                    </a>
+                                </li>                             
+                        </ul>
+                        <ul class="list popup-list">
+                            <h3 class="popup-title">
+                                Продукти                                    
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Бачити все
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Сукні
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Футболки
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Сорочки та блузки
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Світшоти
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Кардигани та светри
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Жакети і куртки
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Штани
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Джинси
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Жіночі піджаки
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Чоботи
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Шорти
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Купальники
+                                    </a>
+                                </li>
+                        </ul>
+                        <ul class="list popup-list">
+                            <h3 class="popup-title">
+                                Наша відповідальність
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        H&M Бережіть себе
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Побачити більше
+                                    </a>
+                                </li>
+                            <h3 class="popup-title">
+                                Випадкові костюми
+                            </h3>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Весілля
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Вечірній одяг
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Карнавальні костюми та костюми
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        повсякденне вбрання
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Офісний одяг
+                                    </a>
+                                </li>
+                                <li class="popup-item">
+                                    <a href="#" class="popup-unit">
+                                        Домашній одяг
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+
             </menu>
+        </header>
+        <main>
+            <section class="info-delivery">
+                <ul class="list info-delivery-list">
+                    <li class="info-delivery-item">
+                        <a href="#" class="link-decor link-color info-delivery-text">
+                            Безкоштовна доставка для членів клубу при покупці понад 120 злотих і завжди безкоштовна для членів клубу Premium.
+                        </a>
+                    </li>
+                    <li class="info-delivery-item">
+                        <a href="#" class="link-decor link-color info-delivery-text">
+                            Термін доставки 2-3 робочих дні 
+                        </a>
+                    </li>
+                    <li class="info-delivery-item">
+                        <a href="#" class="link-decor link-color info-delivery-text">
+                            Новим членам Клубу знижка 10%!                        
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="red-square">
+                <div class="red-square-container">
+                    <div class="red-square-text-container">
+                        <p class="red-square-text red-square-extent">
+                            Розпродаж у розпалі!
+                        </p>
+                        <p class="red-square-big-text">
+                            Тепер до -60%
+                        </p>
+                        <p class="red-square-text">
+                            Ми додали нові моделі
+                        </p>
+                    </div>
+                    <div class="red-square-menu">
+                        <ul class="red-square-list">
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Вона
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Він
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Розділений
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Малюк
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Дитина
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    H&M ДІМ
+                                </a>
+                            </li>
+                            <li class="red-square-item">
+                                <a href="#" class="red-square-unit">
+                                    Спорт
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="red-square-footer">
+                        <p class="red-square-footer-text">
+                            Пропозиція дійсна на hm.com. Не поєднується з іншими акціями. Діє до закінчення запасів.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </body>
 </html>
