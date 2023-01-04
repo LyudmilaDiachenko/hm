@@ -9,11 +9,14 @@ body {
 }
 
 header {
-    margin: 1em 2em 1em 2em;
+    padding: 1em 0 1em 0;
+    position: relative;
+    width: 100%;
 }
 
 nav {
-    margin-bottom: 2em;
+    padding: 0 2em 1em 2em;
+    position: relative;
 }
 
 .list{
@@ -22,11 +25,14 @@ nav {
     list-style: none;
 }
 
-.link-decor {
+.link-decor,
+.popup-unit,
+.like-unit {
     text-decoration: none;
 }
 
-.link-color {
+.link-color,
+.popup-unit {
     color: black;
 }
 
@@ -83,7 +89,7 @@ nav {
 }
 
 .logotype {
-    padding-top: 1em;
+    padding-top: 1.2em;
 }
 
 .nav-list-right {
@@ -112,6 +118,7 @@ nav {
 
 menu {
     padding: 0;
+    position: relative;
 }
 
 .search {
@@ -161,6 +168,10 @@ menu {
     margin-top: 0.4em;
 }
 
+.nav-menu{
+    padding: 0 2em;
+}
+
 .nav-menu-container {
     width: 60em;
     margin: 0 auto;
@@ -179,17 +190,61 @@ menu {
     margin-right: 2.5em;
 }
 
-.popup-container{
-
-}
-
-
 .link-outward {
     font-size: 0.905em;
     line-height: 1.2;
     text-align: center;
     font-weight: 500;
     font-family: sans-serif;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid black;
+    z-index: 99;
+    left: 0;
+}
+
+.popup-container {
+    width: 84%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #fbfbfb;
+    margin-top: 0.5em;
+}
+
+.popup-list {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.popup-title {
+    margin: 0.5em 0 0.3em 0;
+    font-size: 0.85em;
+    font-family: sans-serif;    
+}
+
+.popup-item{
+    transition: 0.2s;
+}
+
+.popup-item:hover{
+    transform: scale(1.2);
+}
+
+.popup-unit {
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.nav-menu-she:hover .popup {
+    display: block;
+    transition-delay: 0.5s;
 }
 
 .info-delivery {
@@ -306,5 +361,160 @@ menu {
 .red-square-footer-text {
     color: white;
     font-size: 0.69em;
+    font-family: sans-serif;
+}
+
+.new,
+.like {
+    margin: 1.5em 2em 0em 2em;
+}
+
+.new-container {
+    width: 60em;
+    height: 40em;
+    margin: 0 auto;
+    background-image: url(./img/main/new.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.new-insert {
+    width: 22%;
+    height: 12%;
+    background-color: black;
+    position: absolute;
+    right: 36%;
+    bottom: 62%;
+    border-radius: 4px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-right: 20px solid black;
+    position: absolute;
+    left: 40.5%;
+    bottom: 65.5%;
+}
+
+.new-text {
+    color: white;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.new-text-top {
+    padding: 1.5em 1.5em 0.5em 1.5em;
+}
+
+.new-text-bottom {
+    padding: 0em 1.5em 0.9em 1.5em;
+}
+
+.new-writing-top {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 72%;
+    right: 26%;
+    color: white;
+    font-size: 2.55em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.new-writing-center {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 81%;
+    right: 43%;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.new-part-knob {
+    position: absolute;
+    margin: 0;
+    top: 87%;
+    right: 44.5%;
+    padding: 0.6em 1em;
+    border: none;
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.new-part-knob:hover {
+    background-color: #edecec;
+}
+
+.like-container {
+    width: 60em;
+    height: 40em;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+}
+
+.like-title{
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 1em 0;
+    color: black;
+}
+
+.like-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.like-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-image-container {
+    margin: 0;
+    padding: 0;
+
+}
+
+.like-image {
+    width: 6em;
+    border-radius: 50%;
+}
+
+.like-image-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.like-image-text {
+    font-size: 0.78em;
+    margin: 0.5em 0.5em;
+    color: black;
+    font-family: sans-serif;
+}
+
+.like-image-text-bottom{
+    font-size: 0.78em;
+    margin: 0 0.5em;
+    color: black;
     font-family: sans-serif;
 }
