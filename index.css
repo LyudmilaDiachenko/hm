@@ -365,7 +365,10 @@ menu {
 }
 
 .new,
-.like {
+.like,
+.perfect-dress,
+.must-have,
+.bad {
     margin: 1.5em 2em 0em 2em;
 }
 
@@ -460,7 +463,7 @@ menu {
 
 .like-container {
     width: 60em;
-    height: 40em;
+    height: 11em;
     margin: 0 auto;
     background-color: #fbfbfb;
 }
@@ -512,9 +515,159 @@ menu {
     font-family: sans-serif;
 }
 
-.like-image-text-bottom{
+.like-image-text-bottom {
     font-size: 0.78em;
     margin: 0 0.5em;
     color: black;
+    font-family: sans-serif;
+}
+
+.perfect-dress-container {
+    width: 60em;
+    height: 40em;
+    margin: 0 auto;
+    background-image: url(./img/festival/screen-festival.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.perfect-dress-insert {
+    width: 22%;
+    height: 12%;
+    background-color: black;
+    position: absolute;
+    right: 41%;
+    bottom: 40%;
+    border-radius: 4px;
+}
+
+.perfect-dress-writing-top {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 66%;
+    right: 43%;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.perfect-dress-writing-center{
+    position: absolute;
+    margin: 0;
+    top: 60%;
+    left: 0%;
+    color: white;
+    font-size: 1.95em;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 2em;
+    text-align: center;
+}
+
+.must-have-container {
+    width: 60em;
+    height: 40em;
+    margin: 0 auto;
+    background-image: url(./img/festival/screen-child.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.triangle-must-have{
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-right: 20px solid black;
+    position: absolute;
+    left: 76%;
+    bottom: 36%;
+}
+
+.must-have-insert {
+    width: 15.5%;
+    height: 12%;
+    background-color: black;
+    position: absolute;
+    left: 78%;
+    bottom: 33%;
+    border-radius: 4px;
+}
+
+.must-have-writing-center{
+    position: absolute;
+    margin: 0;
+    top: 78%;
+    left: 32%;
+    color: white;
+    font-size: 1.95em;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.must-have-writing-top {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 74%;
+    right: 47%;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.must-have-knob {
+    position: absolute;
+    margin: 0;
+    top: 87%;
+    right: 44.5%;
+    padding: 0.6em 1em;
+    border: none;
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+
+.bad-container {
+    width: 60em;
+    height: 40em;
+    margin: 0 auto;
+    background-image: url(./img/festival/bad.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.bad-writing-center{
+    position: absolute;
+    margin: 0;
+    top: 73%;
+    left: 38%;
+    color: white;
+    font-size: 1.95em;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.bad-writing-top {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 81%;
+    right: 33%;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 600;
     font-family: sans-serif;
 }
