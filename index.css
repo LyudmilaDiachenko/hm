@@ -844,6 +844,14 @@ footer {
     font-family: sans-serif;
 }
 
+.footer-list-text {
+    font-size: 0.85em;
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin: 1em 0 2em 0;
+}
+
+
 .link-superficies {
     font-size: 0.8em;
     line-height: 1.8;
@@ -851,6 +859,17 @@ footer {
     text-transform: uppercase;
 }
 
+.social-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item {
+    margin: 1em 1em;
+}
 
 .sprite {
     background-image: url(./img/footer/sprite.png);
@@ -862,6 +881,7 @@ footer {
     width: 24px;
     height: 24px;
     background-position: -5px -5px;
+    border-radius: 3px;
 }
 
 .sprite-instagram {
@@ -886,4 +906,25 @@ footer {
     width: 24px;
     height: 17px;
     background-position: -141px -5px;
+}
+
+.footer-bottom-text {
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 1em 1em;
+}
+
+.footer-logo-text{
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
 }
