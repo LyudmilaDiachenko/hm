@@ -279,8 +279,14 @@ menu {
     text-decoration: underline;
 }
 
-.red-square {
-    margin: 1.5em 2em 0em 2em;
+.red-square,
+.new,
+.like,
+.perfect-dress,
+.must-have,
+.bad,
+.discount {
+    margin: 1.5em 2em 1.5em 2em;
 }
 
 .red-square-container {
@@ -362,15 +368,6 @@ menu {
     color: white;
     font-size: 0.69em;
     font-family: sans-serif;
-}
-
-.new,
-.like,
-.perfect-dress,
-.must-have,
-.bad,
-.discount {
-    margin: 1.5em 2em 0em 2em;
 }
 
 .new-container {
@@ -705,7 +702,7 @@ menu {
 .register {
     width: 100%;
     background-color: #f1ebdf;
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 .register-container {
@@ -801,4 +798,92 @@ menu {
     font-size: 0.8em;
     color: black;
     text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #e4e4e4;
+    margin: 1.5em 0 0 0;
+}
+
+.footer-container {
+    padding: 2em 2em 2em 2em;
+    width: 56em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.footer-list {
+    width: 25%;
+    margin-right: 1em;
+}
+
+.footer-list-title {
+    font-size: 0.8em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin: 1em 0;
+}
+
+.link-mien {
+    font-size: 0.8em;
+    line-height: 1.8;
+    font-family: sans-serif;
+}
+
+.link-superficies {
+    font-size: 0.8em;
+    line-height: 1.8;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+
+.sprite {
+    background-image: url(./img/footer/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite_aside_wiki-facebook {
+    width: 57px;
+    height: 55px;
+    background-position: -5px -5px;
+}
+
+.sprite_aside_wiki-instagram {
+    width: 61px;
+    height: 63px;
+    background-position: -72px -5px;
+}
+
+.sprite_aside_wiki-pinterest {
+    width: 58px;
+    height: 58px;
+    background-position: -143px -5px;
+}
+
+.sprite_aside_wiki-twitter {
+    width: 60px;
+    height: 57px;
+    background-position: -211px -5px;
+}
+
+.sprite_aside_wiki-youtube {
+    width: 63px;
+    height: 46px;
+    background-position: -281px -5px;
 }
