@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g id="Window" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Specifications" transform="translate(-479.000000, -4014.000000)">
+            <g id="Group-9" transform="translate(479.000000, 4014.000000)">
+                <rect id="Press-area-Copy-5" fill="#222222" x="0" y="0" width="48" height="48"></rect>
+                <g id="Element-/-Icon-/-16-/-Control-/-Minus" transform="translate(16.000000, 16.000000)">
+                    <rect id="container" x="0" y="0" width="16" height="16"></rect>
+                    <g id="Assets" transform="translate(2.000000, 8.000000)" fill="#FFFFFF">
+                        <rect id="Collapse-minus-small" x="0" y="0" width="12" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
