@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Element / Icon / 16 / Control / Arrow / Up</title>
+    <g id="Window" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chatbot---Opening-state" transform="translate(-831.000000, -642.000000)">
+            <g id="Text-field" transform="translate(552.000000, 624.000000)">
+                <g id="Group" transform="translate(277.000000, 16.000000)">
+                    <rect id="container" x="0" y="0" width="16" height="16"></rect>
+                    <g id="Assets" transform="translate(2.000000, 2.000000)" fill="#222222">
+                        <polygon id="Arrow-small-left" transform="translate(6.000000, 6.000000) rotate(90.000000) translate(-6.000000, -6.000000) " points="6 0 0 5.99943365 6 12 6.68805599 11.2074547 2.00016277 6.54526374 12 6.54526374 12 5.45360355 2.00016277 5.45360355 6.68805599 0.791453637"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
