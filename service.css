@@ -296,13 +296,11 @@ input[type=number]::-webkit-outer-spin-button {
     box-shadow: 0 24px 38px 3px rgb(0 0 0 / 14%), 0 9px 46px 8px rgb(0 0 0 / 12%), 0 11px 15px -7px rgb(0 0 0 / 20%);
     background: #ffffff;
     box-sizing: border-box;
-    /* overflow: auto; */
     position: fixed;
     top: 25%;
-    bottom: 1%;
     right: 0;
-    width: 22.5em;
-    height: 100%;
+    width: 30%;
+    height: 73%;
 }
 
 @keyframes spinner {
@@ -326,8 +324,15 @@ input[type=number]::-webkit-outer-spin-button {
     animation-iteration-count: 3;
 }
 
-#chatbot-messages{
-    overflow-y: scroll;
+.chatbot-massages-scroll{
+    height: calc(100% - 135px);
+    overflow-y: auto;
+}
+
+.chatbot-footer{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
 }
 
 .chatbot-title-container {
@@ -379,15 +384,13 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: flex-start;
     align-items: center;
     margin: 0 1em;
-    position: fixed;
     bottom: 4em;
-    width: 20em;
 }
 
 .chatbot-input {
     padding: 1em 1em;
     outline: none;
-    width: 18em;
+    width: calc(100% - 16px);
 }
 
 .chatbot-input-picture {
