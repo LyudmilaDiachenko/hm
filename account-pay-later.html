@@ -6,10 +6,14 @@
             Модний та якісний одяг за найкращою ціною
         </title>
         <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="service.css" />
         <link rel="icon" href="./img/nav/icon.jpeg" type="image/jpeg" />
+        <link rel="stylesheet" href="account.css" />
+        <link rel="stylesheet" href="account-pay-later.css" />
+        <script type="application/javascript" src="chatbot.js"></script>
     </head>
     <body>
-       <header>
+        <header>
             <nav>
                 <div class="nav-container">
                     <ul class="list nav-list-left">
@@ -454,383 +458,96 @@
                 </div>
             </menu>
         </header> 
-        <main>
-            <section class="info-delivery">
-                <ul class="list info-delivery-list">
-                    <li class="info-delivery-item">
-                        <a href="#" class="link-decor link-color info-delivery-text">
-                            Безкоштовна доставка для членів клубу при покупці понад 120 злотих і завжди безкоштовна для членів клубу Premium.
-                        </a>
-                    </li>
-                    <li class="info-delivery-item">
-                        <a href="#" class="link-decor link-color info-delivery-text">
-                            Термін доставки 2-3 робочих дні 
-                        </a>
-                    </li>
-                    <li class="info-delivery-item">
-                        <a href="#" class="link-decor link-color info-delivery-text">
-                            Новим членам Клубу знижка 10%!                        
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="red-square">
-                <div class="red-square-container">
-                    <div class="red-square-text-container">
-                        <p class="red-square-text red-square-extent">
-                            Розпродаж у розпалі!
-                        </p>
-                        <p class="red-square-big-text">
-                            Тепер до -60%
-                        </p>
-                        <p class="red-square-text">
-                            Ми додали нові моделі
+        <main class="main-pay-later">
+            <section class="pay-later">
+                <div class="pay-later-container">
+                    <div class="pay-later-title-container">
+                        <h1 class="pay-later-title">
+                            Бажаєте скористатися опцією <span class="pay-later-title-item">оплата через 30 днів</span> у магазині?
+                        </h1>
+                            <p class="pay-later-text">
+                                Хочете спочатку отримати свої продукти та заплатити протягом 30 днів із Klarna? Ось що означає опція <span class="pay-later-title-item">оплата через 30 днів</span>. Ви є учасником Hello H&M, тому все, що вам потрібно зробити, це активувати цю опцію, щоб використовувати її в наших магазинах. Під час покупки в Інтернеті все, що вам потрібно зробити, це вибрати цей параметр як спосіб оплати під час оформлення замовлення.
+                            </p>
+                    </div>
+                    <div class="pay-later-box">
+                        <div class="picture-container">
+                            <img src="img/pay-later/picture.jpeg" class="picture" />
+                        </div>
+                        <div class="document-container">
+                            <h2 class="document-title">
+                                Як використовувати <span class="pay-later-title-item">оплата через 30 днів</span> у магазині
+                            </h2>
+                            <p class="document-text">
+                                Просто відскануйте свою картку учасника в додатку H&M на касі та скажіть продавцю, що ви хочете скористатися опцією <span class="pay-later-title-item">оплата через 30 днів</span> — просто не здавайтеся!
+                            </p>
+                            <p class="document-text">
+                                Ви можете обробити платіж після покупки на сторінці свого облікового запису в додатку H&M.
+                            </p>
+                            <a href="#" class="document-link">Більше інформації</a>
+                        </div>
+                    </div>
+                    <div class="document-footer">
+                        <p class="document-footer-text">
+                            Якщо активувати функцію «Оплатити пізніше», ваші особисті дані будуть передані Klarna Bank AB (Publ.) для оцінки кредитоспроможності. Для отримання додаткової інформації прочитайте Повідомлення про конфіденційність H&M і Повідомлення про <a href="#" class="document-link document-link-decor">конфіденційність Klarna</a>.
                         </p>
                     </div>
-                    <div class="red-square-menu">
-                        <ul class="red-square-list">
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Вона
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Він
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Розділений
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Малюк
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Дитина
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    H&M ДІМ
-                                </a>
-                            </li>
-                            <li class="red-square-item">
-                                <a href="#" class="red-square-unit">
-                                    Спорт
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="red-square-footer">
-                        <p class="red-square-footer-text">
-                            Пропозиція дійсна на hm.com. Не поєднується з іншими акціями. Діє до закінчення запасів.
-                        </p>
+                    <div class="pay-later-btn">
+                        <form action="https://www.klarna.com" method="get" target="_blank">
+                            <button type="submit" class="pay-later-btn-item">
+                                <span class="btn-text">Так, мені цікаво</span>
+                            </button>
+                        </form>
+                        <form action="account.html" method="get">
+                            <button type="submit" class="pay-later-btn-unit">
+                                <span class="btn-text">Можливо пізніше</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </section>
-            <section class="new">
+        <div class="icon-chat-container">
+            <label for="data-entry">
                 <a href="#">
-                    <div class="new-container">
-                        <div class="new-part">
-                            <div class="triangle">
-                            </div>
-                            <div class="new-insert">
-                                <p class="new-text new-text-top">
-                                    59.99 у.о.
-                                </p>
-                                <p class="new-text new-text-bottom">
-                                    Кардиган з аплікацією<span>&nbsp;&gt;</span>
-                                </p>
-                            </div>
-                        </div>        
-                        <div class="new-part">
-                            <p class="new-writing-top">
-                                Підверніть в'язані речі
-                            </p>
-                            <p class="new-writing-center">
-                                Светри у вашому стилі
-                            </p>
-                            <button class="new-part-knob">
-                                Придбай зараз
-                            </button>
-                        </div>
-                    </div>
+                    <img src="./img/service/icon-chat.jpeg" class="icon-chat-picture" width="70px" height="70px"  />            
                 </a>
-            </section>
-            <section class="like">
-                <div class="like-container">
-                    <h3 class="like-title">
-                        Категорії, які вам можуть сподобатися
-                    </h3>                    
-                    <ul class="list like-list">
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/dress.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Сукні</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/jacket.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Жакети і куртки</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/shirt.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Сорочки та блузки</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/sweater.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Кардигани та светри</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/t-shirt.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Футболки</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/trousers.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Штани</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/accessories.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">Аксесуари</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                        <li class="like-item">
-                            <a href="#" class="like-unit">
-                                <figure class="like-image-container">
-                                    <img src="./img/like/see-all.png" class="like-image" />
-                                    <figcaption class="like-image-description">
-                                        <p class="like-image-text">Вона</p>
-                                        <p class="like-image-text-bottom">  Побачити все</p>
-                                    </figcaption>
-                                </figure>                            
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="perfect-dress">
-                <a href="#">
-                    <div class="perfect-dress-container">
-                        <div class="perfect-dress-part">
-                            <div class="perfect-dress-insert">
-                                <p class="new-text new-text-top">
-                                    149.99 у.о.
-                                </p>
-                                <p class="new-text new-text-bottom">
-                                    Сукня на брителях зі...<span>&nbsp;&gt;</span>
-                                </p>
-                            </div>
-                        </div>        
-                        <div class="new-part">
-                            <p class="perfect-dress-writing-top">
-                                Настав час сяяти
-                            </p>
-                            <p class="perfect-dress-writing-center">
-                                Знайдіть свою ідеальну випускну сукню та станьте зіркою вечірки!
-                            </p>
-                            <button class="new-part-knob">
-                                Купити сукні
-                            </button>
-                        </div>
-                    </div>
-                </a>
-            </section>
-            <section class="must-have">
-                <a href="#">
-                    <div class="must-have-container">
-                        <div class="must-have-part">
-                            <div class="triangle-must-have">
-                            </div>
-                            <div class="must-have-insert">
-                                <p class="new-text new-text-top">
-                                    64.99 у.о.
-                                </p>
-                                <p class="new-text new-text-bottom">
-                                    Худі оверсайз<span>&nbsp;&gt;</span>
-                                </p>
-                            </div>
-                        </div>        
-                        <div class="must-have-part">
-                            <p class="must-have-writing-center">
-                                Необхідно, без сумніву!
-                            </p>
-                            <p class="must-have-writing-top">
-                                Зручно
-                            </p>
-                            <button class="must-have-knob">
-                                Купити светри
-                            </button>
-                        </div>
-                    </div>
-                </a>
-            </section>
-            <section class="bad">
-                <a href="#">
-                    <div class="bad-container">
-                        <div class="bad-part">
-                            <p class="bad-writing-center">
-                                Кольорові сни!
-                            </p>
-                            <p class="bad-writing-top">
-                                Комплект постільної білизни на будь-який бюджет
-                            </p>
-                            <button class="must-have-knob">
-                                Купити зараз
-                            </button>
-                        </div>
-                    </div>
-                </a>
-            </section>
-            <section class="discount">
-                <div class="discount-container">
-                    <div class="discount-text">
-                        <p>Нові учасник клубу отримають 10% знижки на першу покупку</p>
-                    </div>
-                    <div class="discount-knob">
-                        <button class="discount-knob-text">
-                            Приєднуйтесь
-                        </button>
-                        <button class="discount-knob-text">
-                            Побачити більше
-                        </button>
+            </label>
+        </div>
+        <input type="checkbox" name="data-entry" id="data-entry" class="data-entry" title="Почати чат">
+        <div class="chatbot">
+            <div class="chatbot-container">
+                <div class="chatbot-title-container">
+                    <h2 class="chatbot-title">
+                        ChatBot
+                    </h2>
+                    <div class="chatbot-title-picture-container">
+                        <label for="data-entry">
+                            <img src="./img/chat-bot/minus-default.svg" class="chatbot-title-picture" />
+                        </label>
+                        <label for="data-entry">
+                            <img src="./img/chat-bot/close-default.svg" class="chatbot-title-picture" />
+                        </label>
                     </div>
                 </div>
-            </section>
-            <section class="register">
-                <div class="register-container">
-                    <div class="register-text-container">
-                        <p class="register-title">
-                            Журнал
-                        </p>
-                        <p class="register-text">
-                            Світ натхнення
-                        </p>
-                        <a href="#" class="register-item">
-                            читайте журнал h&m
-                        </a>
+                <div id="chatbot-spinner"></div>
+                <div class="chatbot-massages-scroll" id="chatbot-massages-scroll">
+                    <div id="chatbot-messages">
+                        <p class="chatbot-text">H&M може обробляти персональні дані, зібрані під час співбесіди чи опитування, щоб покращити якість послуг, що надаються. Детальну інформацію можна знайти в нашій <a href="#">Політиці конфіденційності</a>.</p>
+                        <p class="chatbot-info">Привіт! Я віртуальний помічник H&M. З радістю дам миттєву відповідь на найпоширеніші питання або запропоную зв'язок з консультантом. Чим я можу вам допомогти?</p>
                     </div>
                 </div>
-                <div class="register-list">
-                    <div class="register-link">
-                        <a href="#" class="link-decor">
-                            <div class="register-image">
-                                <img src="./img/register/global-brands.avif" width="288" height="192" />
-                            </div>
-                            <div class="register-link-container">
-                                <div>
-                                    <p class="register-link-title">
-                                        Всередині h&m
-                                    </p>
-                                    <p class="register-link-text">
-                                        Відчуйте сили завдяки нашим 4 глобальним рушіям бренду
-                                    </p>
-                                </div>
-                                <div class="register-link-item-container">
-                                    <p class="register-link-item">
-                                        Прочитай історію &rarr;
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
+                <div class="chatbot-footer">
+                    <div class="chatbot-input-container">
+                        <input id="chatbot-input" type="text" placeholder="Напишіть нам (макс. 140 символів)" class="chatbot-input" />
+                        <img id="chatbot-btn" src="./img/chat-bot/arrow-black.svg" class="chatbot-input-picture" />
                     </div>
-                    <div class="register-link">
-                        <a href="#" class="link-decor">
-                            <div class="register-image">
-                                <img src="./img/register/Magazine-1-Lou.webp" width="288" height="192" />
-                            </div>
-                            <div class="register-link-container">
-                                <div>
-                                    <p class="register-link-title">
-                                        Всередині h&m
-                                    </p>
-                                    <p class="register-link-text">
-                                        Футбольна легенда H&M Move Надя Надім
-                                    </p>
-                                </div>
-                                <div class="register-link-item-container">
-                                    <p class="register-link-item">
-                                        Прочитай історію &rarr;
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="chatbot-download">
+                        <img src="./img/chat-bot/email.svg" class="chatbot-download-picture" />
+                        <p class="chatbot-download-text">Завантажте запис розмови</p>
                     </div>
-                    <div class="register-link">
-                        <a href="#" class="link-decor">
-                            <div class="register-image">
-                                <img src="./img/register/Magazine-Hero-image-essentials.webp" width="288" height="192" />
-                            </div>
-                            <div class="register-link-container">
-                                <div>
-                                    <p class="register-link-title">
-                                        Всередині h&m
-                                    </p>
-                                    <p class="register-link-text">
-                                        Чоловічий капсульний гардероб
-                                    </p>
-                                </div>
-                                <div class="register-link-item-container">
-                                    <p class="register-link-item">
-                                        Прочитай історію &rarr;
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>                
-            </section>
-        </main>
+                </div>
+            </div>
+        </div>         
+    </main>
         <footer>
             <div class="footer-container">
                 <div class="footer-block">

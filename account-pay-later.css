@@ -1,0 +1,97 @@
+.pay-later {
+    width: 50em;
+    margin: 0 auto;
+}
+
+.pay-later-title {
+    font-size: 1.8em;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin: 1em;
+    text-align: center;
+}
+
+.pay-later-title-item {
+    text-transform: uppercase;
+}
+
+.pay-later-text {
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.3;
+    text-align: center;
+    margin: 1em 0.5em 3em 0.5em;
+}
+
+.pay-later-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 3em;
+}
+
+.picture {
+    width: 180px;
+    height: 210px;
+}
+
+.document-container {
+    margin: 0 1em 1em;
+}
+
+.document-title {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.document-text {
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 1.3;
+    text-align: start;
+    margin: 1em 0.5em 1em 0em;
+}
+
+.document-link {
+    color: black;
+}
+
+.document-link-decor:hover {
+    opacity: 0.7;
+}
+
+.document-footer-text {
+    font-size: 0.8em;
+    font-family: sans-serif;
+    text-align: start;
+    line-height: 1.5;
+    margin: 1em 0;
+}
+
+.pay-later-btn-item {
+    height: 80%;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em 1em;
+    background-color: black;
+    color: white;
+}
+
+.pay-later-btn-unit {
+    height: 80%;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em 1em;
+    background-color: #fbfbfb;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-text {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
