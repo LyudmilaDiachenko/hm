@@ -75,9 +75,10 @@
 }
 
 .main-container {
-    width: 60%;
+    max-width: 1140px;
     height: 100%;
     margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -86,7 +87,7 @@
 }
 
 .left-box {
-    width: 30%;
+    width: 40%;
     padding: 2em 1em 2em
 }
 
@@ -229,10 +230,127 @@ progress::-moz-progress-bar {
     padding: 1em 0.5em;
 }
 
-.progress-bar-btn-picture{
+.progress-bar-btn-picture {
     width: 39px;
     height: 33px;
     padding: 1em 0;
 }
 
+.account-info-container {
+    padding: 20px 0;
+}
 
+.account-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.account-info-item {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-item-background {
+    background-color: white;
+}
+
+.account-info-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.account-info-text:hover {
+    text-decoration: underline;
+    color: #e50010;
+}
+
+.account-info-text {
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color: black;
+    margin-left: 15px;
+}
+
+.my-shopping {
+    width: 70%;
+    padding: 32px 0 0 24px;
+}
+
+.my-shopping-title,
+.my-proposition-title {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.my-shopping-link,
+.my-proposition-link {
+    text-decoration: none;
+}
+
+.my-shopping-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px 0;
+}
+
+.my-shopping-picture {
+    width: 140px;
+    height: 95px;
+}
+
+.my-proposition-picture {
+    width: 160px;
+    height: 120px;
+}
+
+.my-shopping-text-container {
+    width: 140px;
+    height: 95px;
+    background-color: white;
+}
+
+.my-proposition-text-container {
+    width: 160px;
+    height: 120px;
+    background-color: white;
+}
+
+.text-discount{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: sans-serif;
+}
+
+.text-bonus {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: black;
+    margin: 15px 5px 5px 5px;
+}
+
+.text-date {
+    font-size: 10px;
+    font-family: sans-serif;
+    color: black;
+    margin: 5px;
+}
+
+.my-proposition-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
