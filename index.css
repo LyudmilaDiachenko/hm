@@ -428,7 +428,7 @@ menu {
 }
 
 .popup-container {
-    width: 84%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
