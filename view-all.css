@@ -134,10 +134,46 @@
 }
 
 .product-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.product-item-btn {
+    position: absolute;
+    right: 0px;
+    bottom: 120px;
+    border: none;
+}
+
+#isexpanded,
+#input-red-suit,
+#input-red-jacket,
+#input-pink-bag,
+#input-earrings,
+#input-body,
+#input-sandals,
+#input-dress {
+    opacity: 0;
+}
+
+#isexpanded-btn {
+    fill: white;
+    stroke: black;
+}
+
+#isexpanded:checked ~ #isexpanded-btn,
+#input-red-suit:checked ~ #isexpanded-btn,
+#input-red-jacket:checked ~ #isexpanded-btn,
+#input-pink-bag:checked ~ #isexpanded-btn,
+#input-earrings:checked ~ #isexpanded-btn,
+#input-body:checked ~ #isexpanded-btn,
+#input-sandals:checked ~ #isexpanded-btn,
+#input-dress:checked ~ #isexpanded-btn {
+    fill: #e50010;
+    stroke: #e50010;
 }
 
 .product-image {
@@ -198,4 +234,39 @@
     font-size: 12px;
     font-family: sans-serif;
     margin: 10px 0;
+}
+
+.show-more {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.show-more-text {
+    font-size: 12px;
+    font-family: sans-serif;
+    margin: 20px 0 0 0;
+    padding: 5px;
+}
+
+.line-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 400px;
+    height: 5px;
+    margin: 10px;
+}
+
+.line-finish {
+    background: #d0d0d0;
+    height: inherit;
+    width: calc(100% - 25%);
+}
+
+.line-start {
+    background: black;
+    height: inherit;
+    width: calc(100% - 75%);
 }
