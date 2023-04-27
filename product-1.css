@@ -1,21 +1,18 @@
-.product {
-    width: 100%;
+.product-final {
+    width: calc(100% - 60px);
     height: 100%;
-    padding: 0 30px;
+    margin: 0 30px;
     background-color: aquamarine;
 }
 
-.product-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.product-final-container {
+
 }
 
 .product-image {
-    /* width: 25%; */
 
 }
 
 .product-text {
-    
+
 }

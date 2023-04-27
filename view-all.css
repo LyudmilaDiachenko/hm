@@ -112,10 +112,9 @@
     display: block;
     position: absolute;
     z-index: 1;
-    /* background-color: #fbfbfb; */
+    background-color: #fbfbfb;
     width: 320px;
     margin-top: 10px;
-    background-color: #ff8282;
 }
 
 :checked~label>.filter-title {
