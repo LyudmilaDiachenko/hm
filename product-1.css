@@ -1,0 +1,21 @@
+.product {
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    background-color: aquamarine;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-image {
+    /* width: 25%; */
+
+}
+
+.product-text {
+    
+}

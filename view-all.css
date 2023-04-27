@@ -400,10 +400,12 @@
 }
 
 .product-item-btn {
+    background-color: transparent;
     position: absolute;
     right: 0px;
     bottom: 125px;
     border: none;
+    z-index: 100;
 }
 
 #isexpanded,
@@ -442,7 +444,6 @@
 .product-image-container {
     position: relative;
 }
-
 
 .product-image,
 .product-image-db,
