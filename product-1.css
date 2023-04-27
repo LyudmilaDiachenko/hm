@@ -6,13 +6,41 @@
 }
 
 .product-final-container {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.product-image {
-
+.product-final-image,
+.product-final-text {
+    width: 33%;
 }
 
-.product-text {
+.product-final-text {
+    position: relative;
+}
 
+.product-final-item-btn {
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    border: none;
+    z-index: 100;
+}
+
+.final-image-params {
+    width: 100%;
+    height: 150vh;
+}
+
+.aside-image {
+    width: 70px;
+    height: 20vh;
+    border: 1px solid black;
+}
+
+.star {
+    width: 12px;
+    height: 12px;
 }
