@@ -1,37 +1,24 @@
-.product-final {
-    width: calc(100% - 60px);
-    height: 100%;
-    margin: 0 30px;
-    background-color: aquamarine;
-}
+                                                    /* Aside */
 
-.product-final-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.product-final-image,
-.product-final-text {
-    width: 33%;
-}
-
-.product-final-text {
+.right-panel {
+    width: calc(30% - 60px);
+    margin: 30px;
+    float: right;
+    box-sizing: border-box;
     position: relative;
+}
+
+.innerElement {
+    position: absolute;
 }
 
 .product-final-item-btn {
     background-color: transparent;
     position: absolute;
     right: 0px;
-    top: -5px;
+    top: -10px;
     border: none;
     z-index: 100;
-}
-
-.final-image-params {
-    width: 100%;
-    height: 150vh;
 }
 
 .aside-image {
@@ -44,3 +31,181 @@
     width: 12px;
     height: 12px;
 }
+
+.add-size-arrow {
+    background-image: url(./img/view-all/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 50%;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #959595;
+    outline: none;
+}
+
+.add-product-btn {
+    text-align: center;
+    margin: 1em auto;
+    padding: 1em 4em;
+    background-color: black;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background-image: url(./img/product/purse.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50% right 60%;
+}
+
+.add-product-link {
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.delivery-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-info {
+    margin-right: 5px;
+    width: 40px;
+    height: 20px;
+}
+
+.text-underline {
+    text-decoration: none;
+}
+
+
+
+                                                    /* Main */
+.product-final {
+    width: calc(70% - 75px);
+    height: 100%;
+    margin: 0 30px;
+    background-color: aquamarine;
+}
+
+.product-final-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+}
+
+.final-image-params {
+    height: 130vh;
+    width: 100%;
+}
+
+.margin-rigth {
+    margin-right: 15px;
+}
+
+.product-description {
+    padding: 30px;
+    background-color: white;
+}
+
+.text-basic {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.product-text-bold {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+}
+
+.text-thesis {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 12px;
+    color: #707070;
+}
+
+.product-text-align {
+    margin-left: 140px;
+}
+
+.fits-size-link {
+    color: black;
+    text-decoration: none;
+}
+
+.fits-size-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.respond {
+    position: relative;
+}
+
+.fits-size-border {
+    border: 1px solid #7070707a;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    background-color: black;
+    position: absolute;
+    top: -6px;
+    left: 250px;
+}
+
+.info-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text-bold {
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.info-text {
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    color: black;
+}
+
+.product-info-container {
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    background-color: white;
+    padding: 20px 40px;
+    overflow: hidden;
+    animation: slidein 1s reverse forwards;
+}
+
+#product-info:checked ~ .label-product-info .product-info-container {
+    animation: slidein 1s forwards; 
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+    100% {
+        right: 100px;
+        opacity: 1;
+    }
+  }
