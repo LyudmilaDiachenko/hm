@@ -150,9 +150,8 @@
 
 .filter-title {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
 .filter-title-up-level {

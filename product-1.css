@@ -82,32 +82,41 @@
 
                                                     /* Main */
 .product-final {
-    width: calc(70% - 75px);
+    width: calc(70% - 49px);
     height: 100%;
     margin: 0 30px;
-    background-color: aquamarine;
 }
 
 .product-final-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
 .final-image-params {
-    height: 130vh;
-    width: 100%;
+    height: 750px;
+    width: 505px;
+    object-fit: cover;
 }
 
 .margin-rigth {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .product-description {
-    padding: 30px;
     background-color: white;
+    margin: 0 auto;
+    padding: 60px 170px;
+    margin-bottom: 30px;
+}
+
+.description-checkbox {
+    border-top: 1px solid #D0D0D0;
+    padding: 0 24px;
+}
+
+.padd {
+    padding: 15px 0;
 }
 
 .text-basic {
@@ -165,47 +174,51 @@
     left: 250px;
 }
 
-.info-text-container {
-    display: flex;
-    flex-direction: column;
+.description-text,
+.description-material-provider {
+    display: none;
+    margin-bottom: 30px;    
 }
 
-.info-text-bold {
+#description,
+#description-material {
+    display: none;
+    padding: 0 24px;
+}
+
+#description:checked~label>.description-text,
+#description-material:checked~label>.description-material-provider {
+    display: block;
+}
+
+.description-title {
     font-family: sans-serif;
-    line-height: 1.4;
-    font-size: 16px;
+    line-height: 1.6;
+    font-size: 15px;
     color: black;
     font-weight: 600;
+    margin: 10px 0;
 }
 
-.info-text {
+.info-text-container {
+    margin: 0;
+}
+
+.material-text{
+    color: #707070;
     font-family: sans-serif;
-    line-height: 1.4;
-    font-size: 14px;
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+.provider-btn {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
     color: black;
 }
 
-.product-info-container {
-    position: fixed;
-    top: 0;
-    z-index: 500;
-    background-color: white;
-    padding: 20px 40px;
-    overflow: hidden;
-    animation: slidein 1s reverse forwards;
+.provider-btn:hover {
+    background-color: #a7a7a7;
 }
-
-#product-info:checked ~ .label-product-info .product-info-container {
-    animation: slidein 1s forwards; 
-}
-
-@keyframes slidein {
-    0% {
-        opacity: 0;
-        right: 0;
-    }
-    100% {
-        right: 100px;
-        opacity: 1;
-    }
-  }
